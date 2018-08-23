@@ -1,12 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueI18n from 'vue-i18n'
+import zhHans from './assets/lang/zh-hans'
+import zhHant from './assets/lang/zh-hant'
+import en from './assets/lang/en'
 Vue.use(VueI18n)
 
 const messages = {
-  en: require('./assets/lang/en'),
-  'zh-hans': require('./assets/lang/zh-hans'),
-  'zh-hant': require('./assets/lang/zh-hant')
+  en: en,
+  'zh-hans': zhHans,
+  'zh-hant': zhHant
 }
 
 const dateTimeFormats = {
